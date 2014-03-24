@@ -1,6 +1,6 @@
 {
   "name": "thenstream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Construct a Readable stream from a thenable. Useful if you don't have the actual stream yet.",
   "main": "lib/main.js",
   "scripts": {
