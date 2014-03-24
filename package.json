@@ -1,0 +1,31 @@
+{
+  "name": "thenstream",
+  "version": "0.0.0",
+  "description": "Construct a Readable stream from a thenable. Useful if you don't have the actual stream yet.",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novemberborn/thenstream"
+  },
+  "author": {
+    "name": "Mark Wubben",
+    "url": "http://novemberborn.net"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novemberborn/thenstream/issues"
+  },
+  "homepage": "https://github.com/novemberborn/thenstream",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "jshint-stylish": "^0.1.5",
+    "jshint": "^2.4.4",
+    "mocha": "^1.18.2",
+    "sinon": "^1.9.0",
+    "chai-sentinels": "^1.0.0"
+  }
+}
