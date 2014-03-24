@@ -11,6 +11,21 @@
     "type": "git",
     "url": "https://github.com/novemberborn/thenstream"
   },
+  "keywords": [
+    "promise",
+    "promises",
+    "Promises/A+",
+    "promises-aplus",
+    "deferred",
+    "deferreds",
+    "when",
+    "future",
+    "async",
+    "asynchronous",
+    "streaming",
+    "streams",
+    "readable"
+  ],
   "author": {
     "name": "Mark Wubben",
     "url": "http://novemberborn.net"
