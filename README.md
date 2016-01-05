@@ -5,6 +5,29 @@ Construct a [Readable stream](http://nodejs.org/api/stream.html#stream_class_str
 from a [thenable](http://promises-aplus.github.io/promises-spec/#terminology).
 Useful if you don't have the actual stream yet.
 
+## Deprecation Notice
+
+This module is no longer maintained. You can achieve a similar effect
+like this:
+
+```js
+'use strict'
+
+const PassThrough = require('stream').PassThrough
+
+function streamify (thenable, opts) {
+  const stream = new PassThrough(opts)
+
+  Promise.resolve(thenable)
+    .then(input => input.pipe(stream))
+    .catch(err => stream.emit('error', err))
+
+  return stream
+}
+```
+
+This won't fully replace this module but it should suffice for most use cases.
+
 ## Installation
 
 ```js
